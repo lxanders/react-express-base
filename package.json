@@ -6,6 +6,7 @@
     "license": "MIT",
     "main": "server/index.js",
     "scripts": {
+        "start": "babel server --out-dir build/server && node build/server/index.js",
         "lint": "eslint .",
         "pretest": "npm run lint",
         "test": "npm run test:unit && npm run test:functional",
@@ -32,6 +33,7 @@
         "winston": "2.1.1"
     },
     "devDependencies": {
+        "babel-cli": "^6.2.0",
         "babel-core": "^6.3.2",
         "babel-preset-es2015": "^6.1.18",
         "chai": "^3.4.1",
