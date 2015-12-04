@@ -6,7 +6,9 @@
     "license": "MIT",
     "main": "server/index.js",
     "scripts": {
-        "start": "babel server --out-dir build/server && node build/server/index.js",
+        "build:server": "babel server --out-dir build/server",
+        "prestart": "npm run build:server",
+        "start": "node build/server/index.js",
         "lint": "eslint .",
         "pretest": "npm run lint",
         "test": "npm run test:unit:coverage && npm run test:functional",
