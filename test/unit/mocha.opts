@@ -1,0 +1,4 @@
+--slow 10
+--reporter spec
+--recursive
+--compilers js:babel-core/register
