@@ -9,9 +9,10 @@
         "start": "babel server --out-dir build/server && node build/server/index.js",
         "lint": "eslint .",
         "pretest": "npm run lint",
-        "test": "npm run test:unit && npm run test:functional",
+        "test": "npm run test:unit:coverage && npm run test:functional",
         "test:functional": "mocha test/functional --opts test/functional/mocha.opts",
         "test:unit": "mocha test/unit --opts test/unit/mocha.opts",
+        "test:unit:coverage": "babel-node node_modules/isparta/bin/isparta cover _mocha -- test/unit --opts test/unit/mocha.opts",
         "test:unit:watch": "npm run test:unit -- --watch --reporter min"
     },
     "repository": {
@@ -39,6 +40,7 @@
         "chai": "^3.4.1",
         "eslint": "^1.10.3",
         "eslint-plugin-mocha": "^1.1.0",
+        "isparta": "^4.0.0",
         "mocha": "^2.3.4",
         "sinon": "^1.17.2",
         "sinon-chai": "^2.8.0",
