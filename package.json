@@ -1,0 +1,24 @@
+{
+    "name": "react-express-base",
+    "version": "0.0.0",
+    "description": "Simple react spa initially served by express and bundled with webpack",
+    "author": "Alexander Schmidt <alexanderschmidt1@gmail.com>",
+    "license": "MIT",
+    "main": "server/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lxanders/react-express-base.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lxanders/react-express-base/issues"
+    },
+    "homepage": "https://github.com/lxanders/react-express-base#readme",
+    "keywords": [
+        "react",
+        "express",
+        "webpack"
+    ]
+}
