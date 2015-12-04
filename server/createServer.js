@@ -1,5 +1,4 @@
 import express from 'express';
-import path from 'path';
 import createLoggerMiddleware from './system/createLoggerMiddleware';
 import registerRoutes from './registerRoutes';
 
