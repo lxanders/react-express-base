@@ -1,2 +1,5 @@
+app/app.js
 build/**
 node_modules/**
+server/index.js
+webpack.config.js
