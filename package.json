@@ -6,10 +6,9 @@
     "license": "MIT",
     "main": "server/index.js",
     "scripts": {
-        "build:server": "babel server --out-dir build/server",
-        "build:client": "webpack",
-        "prestart": "npm run build:client && npm run build:server",
-        "start": "node build/server/index.js",
+        "build": "webpack",
+        "prestart": "npm run build",
+        "start": "node server/index.js",
         "lint": "eslint .",
         "pretest": "npm run lint",
         "test": "npm run test:unit:coverage && npm run test:functional",

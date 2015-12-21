@@ -2,7 +2,7 @@ import express from 'express';
 import createLoggerMiddleware from './system/createLoggerMiddleware';
 import registerRoutes from './registerRoutes';
 
-export default (expressServer, logger) => {
+export function createServer(expressServer, logger) {
     expressServer.use(createLoggerMiddleware(logger));
 
     /* eslint-disable new-cap */
@@ -10,4 +10,4 @@ export default (expressServer, logger) => {
     /* eslint-enable new-cap */
 
     return expressServer;
-};
+}

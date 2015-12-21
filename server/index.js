@@ -1,10 +1,14 @@
-import express from 'express';
-import logger from 'winston';
-import createServer from './createServer';
+'use strict';
 
-const expressServer = express();
-const server = createServer(expressServer, logger);
-const port = 3000;
+require('babel-register');
+
+var express = require('express');
+var logger = require('winston');
+var createServer = require('./createServer').createServer;
+
+var expressServer = express();
+var server = createServer(expressServer, logger);
+var port = 3000;
 
 server.listen(port);
 
