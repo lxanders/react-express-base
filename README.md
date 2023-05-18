@@ -1,4 +1,4 @@
-# react-express-base
+# Deprecated: react-express-base
 
 This is a small demo project for an [`React`](http://facebook.github.io/react/) single page application (spa).
 
